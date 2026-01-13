@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Open Support
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+
+<odoo>
+    <!-- Reemplaza en el reporte PDF de cotizaciones: la columna de subtotales sin impuestos (price_subtotal) por la columna subtotales con impuestos (price_total) -->
+    <template id="report_saleorder_document_override" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//t[@t-set='price_field']" position="attributes">
+            <attribute name="t-value">'price_total'</attribute>
+        </xpath>
+    </template>
+
+</odoo>
+
