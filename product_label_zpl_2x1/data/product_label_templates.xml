@@ -1,0 +1,9 @@
+<odoo>
+    <record id="product_label_template_zpl_2x1" model="product.label.template">
+        <field name="name">ZPL 2x1 pulgadas</field>
+        <field name="report_type">qweb-text</field>
+        <field name="report_name">product.report_label_zpl_2x1</field>
+        <field name="printer_type">zebra</field>
+    </record>
+</odoo>
+
