@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Open Support
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0) -->
+<template>
+    <t t-extend="other.qweb.template">
+        <!-- Your template extension -->
+    </t>
+</template>
