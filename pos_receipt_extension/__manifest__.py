@@ -20,6 +20,7 @@
     "assets": {
         "point_of_sale._assets_pos": [
             "pos_receipt_extension/static/src/xml/pos_receipt_extension.xml",
+            "pos_receipt_extension/static/src/js/pos_receipt_extension.js",
         ],
     },
 }
