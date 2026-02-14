@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-   <t t-name="custom_pos_receipt.OrderReceipt"
-      t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
+
+    <!-- Heredamos la plantilla ReceiptHeader del POS -->
+    <t t-name="custom_pos_receipt.OrderReceipt"
+       t-inherit="point_of_sale.ReceiptHeader"
+       t-inherit-mode="extension">
+
+        <!-- Eliminamos el logo del recibo -->
+        <xpath expr="//img[hasclass('pos-receipt-logo')]" position="replace"/>
+
+        <!-- Insertamos la información del cliente como antes -->
         <xpath expr="//div[hasclass('pos-receipt-contact')]" position="inside">
            <t t-if="props.data.partner.name">
                <div>Client:
@@ -9,5 +17,7 @@
                </div>
            </t>
        </xpath>
-   </t>
+
+    </t>
 </templates>
+
