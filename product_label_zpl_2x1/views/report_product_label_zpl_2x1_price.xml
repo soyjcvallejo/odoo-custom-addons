@@ -20,17 +20,22 @@
 ^PW406
 ^LL203
 ^CI28
+
 ^FO20,20
 ^A0N,24,22
 ^FB366,3,4,L,0
 ^FD[<t t-esc="o.default_code"/>] <t t-esc="o.name"/>^FS
-^FO35,68
-^A0N,66,48
+
+^FO20,68
+^A0N,54,40
+^FB366,1,0,C,0
 ^FH^FD<t t-esc="o.lst_price"/> Bs.^FS
+
 ^FO20,115
 ^BY2
 ^BCN,60,Y,N,N
 ^FD<t t-esc="o.barcode"/>^FS
+
 ^XZ
 
             </t>
