@@ -21,5 +21,6 @@
         "data/product_label_templates.xml",
         "views/report_product_label_zpl_2x1.xml",
         "views/report_product_label_zpl_2x1_price.xml",
+        "views/report_product_label_zpl_2x1_barcode-4x1.xml",
     ],
 }

@@ -1,0 +1,50 @@
+<odoo>
+    <!-- Acción del reporte -->
+    <record id="action_report_label_zpl_2x1_barcode-4x1" model="ir.actions.report">
+        <field name="name">Etiqueta ZPL 2x1 - 4 códigos de barra</field>
+        <field name="model">product.product</field>
+        <field name="report_type">qweb-text</field>
+        <field name="report_name">product_label_zpl_2x1.report_label_zpl_2x1_barcode-4x1</field>
+        <field name="report_file">product_label_zpl_2x1.report_label_zpl_2x1_barcode-4x1</field>
+        <field name="print_report_name">
+            (object.default_code or object.name or 'producto') + '_label_2x1_barcode-4x1.zpl'
+        </field>
+    </record>
+
+    <!-- Plantilla QWeb -->
+    <template id="report_label_zpl_2x1_barcode-4x1">
+        <t t-foreach="docs" t-as="o">
+            <t t-foreach="range(o.env.context.get('custom_quantity', 1))" t-as="i">
+
+^XA
+^PW406
+^LL203
+^CI28
+
+^FO20,20
+^BY2
+^BCR,60,Y,N,N
+^FD<t t-esc="o.barcode"/>^FS
+
+^FO122,20
+^BY2
+^BCR,60,Y,N,N
+^FD<t t-esc="o.barcode"/>^FS
+
+^FO224,20
+^BY2
+^BCR,60,Y,N,N
+^FD<t t-esc="o.barcode"/>^FS
+
+^FO326,20
+^BY2
+^BCR,60,Y,N,N
+^FD<t t-esc="o.barcode"/>^FS
+
+^XZ
+
+            </t>
+        </t>
+    </template>
+</odoo>
+
