@@ -7,7 +7,7 @@ class ProductLabelLayout(models.TransientModel):
         selection_add=[
             ('zpl_2x1', 'Etiquetas ZPL 2x1 pulgadas'),
             ('zpl_2x1_price', 'Etiquetas ZPL 2x1 pulgadas - con precio'),
-            ('zpl_2x1_barcode-4x1', 'Etiquetas ZPL 2x1 pulgadas - 4 códigos de barras'),
+            ('zpl_2x1_barcode-4x1', 'Etiquetas ZPL 2x1 pulgadas - 4 códigos de barras (CODE 18)'),
         ],
         ondelete={
             'zpl_2x1': 'set default',

@@ -1,7 +1,7 @@
 <odoo>
     <!-- Acción del reporte -->
     <record id="action_report_label_zpl_2x1_barcode-4x1" model="ir.actions.report">
-        <field name="name">Etiqueta ZPL 2x1 - 4 códigos de barra</field>
+        <field name="name">Etiqueta ZPL 2x1 - 4 códigos de barra (CODE 18)</field>
         <field name="model">product.product</field>
         <field name="report_type">qweb-text</field>
         <field name="report_name">product_label_zpl_2x1.report_label_zpl_2x1_barcode-4x1</field>
