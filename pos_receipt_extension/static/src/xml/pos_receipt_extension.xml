@@ -9,11 +9,12 @@
         <!-- Eliminamos el logo del recibo -->
         <xpath expr="//img[hasclass('pos-receipt-logo')]" position="replace"/>
 
-        <!-- Insertamos la información del cliente como antes -->
+        <!-- Insertamos la información del cliente de forma segura -->
         <xpath expr="//div[hasclass('pos-receipt-contact')]" position="inside">
-           <t t-if="props.data.partner.name">
-               <div>Client:
-                    <t t-esc='props.data.partner.name'/>
+           <t t-if="props.data.partner and props.data.partner.name">
+               <div>
+                   Cliente:
+                   <t t-esc="props.data.partner.name"/>
                </div>
            </t>
        </xpath>
